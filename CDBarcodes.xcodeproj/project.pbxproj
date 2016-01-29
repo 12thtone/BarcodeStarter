@@ -14,6 +14,11 @@
 		2CA0E82A1C5BCC21007F20DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0E8281C5BCC21007F20DE /* LaunchScreen.storyboard */; };
 		2CA0E8351C5BCC21007F20DE /* CDBarcodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E8341C5BCC21007F20DE /* CDBarcodesTests.swift */; };
 		2CA0E8401C5BCC21007F20DE /* CDBarcodesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E83F1C5BCC21007F20DE /* CDBarcodesUITests.swift */; };
+		2CA0E8531C5BD0D9007F20DE /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E8521C5BD0D9007F20DE /* AlbumDetailsViewController.swift */; };
+		2CA0E8551C5BD0EF007F20DE /* BarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E8541C5BD0EF007F20DE /* BarcodeReaderViewController.swift */; };
+		2CA0E8571C5BD116007F20DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E8561C5BD116007F20DE /* Constants.swift */; };
+		2CA0E8591C5BD12C007F20DE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E8581C5BD12C007F20DE /* DataService.swift */; };
+		2CA0E85B1C5BD143007F20DE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E85A1C5BD143007F20DE /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		2CA0E83B1C5BCC21007F20DE /* CDBarcodesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDBarcodesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA0E83F1C5BCC21007F20DE /* CDBarcodesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDBarcodesUITests.swift; sourceTree = "<group>"; };
 		2CA0E8411C5BCC21007F20DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA0E8521C5BD0D9007F20DE /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
+		2CA0E8541C5BD0EF007F20DE /* BarcodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReaderViewController.swift; sourceTree = "<group>"; };
+		2CA0E8561C5BD116007F20DE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2CA0E8581C5BD12C007F20DE /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		2CA0E85A1C5BD143007F20DE /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 		2CA0E81E1C5BCC21007F20DE /* CDBarcodes */ = {
 			isa = PBXGroup;
 			children = (
+				2CA0E84D1C5BCCF6007F20DE /* Utility */,
+				2CA0E8501C5BCD3E007F20DE /* Service */,
+				2CA0E84F1C5BCD34007F20DE /* Model */,
+				2CA0E84E1C5BCD02007F20DE /* Controller */,
+				2CA0E8511C5BCD74007F20DE /* View */,
 				2CA0E81F1C5BCC21007F20DE /* AppDelegate.swift */,
 				2CA0E8211C5BCC21007F20DE /* ViewController.swift */,
 				2CA0E8231C5BCC21007F20DE /* Main.storyboard */,
@@ -123,6 +138,46 @@
 				2CA0E8411C5BCC21007F20DE /* Info.plist */,
 			);
 			path = CDBarcodesUITests;
+			sourceTree = "<group>";
+		};
+		2CA0E84D1C5BCCF6007F20DE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0E8561C5BD116007F20DE /* Constants.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		2CA0E84E1C5BCD02007F20DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0E8521C5BD0D9007F20DE /* AlbumDetailsViewController.swift */,
+				2CA0E8541C5BD0EF007F20DE /* BarcodeReaderViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2CA0E84F1C5BCD34007F20DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0E85A1C5BD143007F20DE /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2CA0E8501C5BCD3E007F20DE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0E8581C5BD12C007F20DE /* DataService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		2CA0E8511C5BCD74007F20DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA0E8571C5BD116007F20DE /* Constants.swift in Sources */,
 				2CA0E8221C5BCC21007F20DE /* ViewController.swift in Sources */,
+				2CA0E8531C5BD0D9007F20DE /* AlbumDetailsViewController.swift in Sources */,
+				2CA0E8591C5BD12C007F20DE /* DataService.swift in Sources */,
+				2CA0E8551C5BD0EF007F20DE /* BarcodeReaderViewController.swift in Sources */,
+				2CA0E85B1C5BD143007F20DE /* Album.swift in Sources */,
 				2CA0E8201C5BCC21007F20DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
