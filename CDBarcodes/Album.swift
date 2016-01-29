@@ -6,3 +6,9 @@
 //  Copyright © 2016 Matt Maher. All rights reserved.
 //
 
+import Foundation
+
+class Album {
+    
+    
+}
