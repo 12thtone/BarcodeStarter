@@ -538,6 +538,7 @@
 				2CA0E8461C5BCC21007F20DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CA0E8471C5BCC21007F20DE /* Build configuration list for PBXNativeTarget "CDBarcodesTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +547,7 @@
 				2CA0E8491C5BCC21007F20DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CA0E84A1C5BCC21007F20DE /* Build configuration list for PBXNativeTarget "CDBarcodesUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +556,7 @@
 				2CA0E84C1C5BCC21007F20DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
